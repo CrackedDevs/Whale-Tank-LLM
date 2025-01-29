@@ -63,7 +63,7 @@ export async function handleAIChatInteraction(
         };
 
         const completion = await openai.chat.completions.create({
-            model: "gpt-3.5-turbo",
+            model: "gpt-4o",
             messages: [
                 systemMessage,
                 { role: "user", content: context.message }
